@@ -8,6 +8,8 @@ venv/
 .idea/
 __pycache__/
 runtime/*.json
+!runtime/campus.json
+!runtime/spaces.json
 runtime/*.dat
 runtime/version
 runtime/mode
