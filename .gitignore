@@ -1,0 +1,13 @@
+.env
+captcha.png
+reporter.conf
+*.json
+!model.json
+venv/
+.vscode/
+.idea/
+__pycache__/
+runtime/*.json
+runtime/*.dat
+runtime/version
+runtime/mode

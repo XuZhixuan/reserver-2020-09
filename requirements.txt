@@ -1,0 +1,7 @@
+certifi
+chardet
+idna
+pycryptodome
+requests
+schedule
+urllib3

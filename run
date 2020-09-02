@@ -1,0 +1,28 @@
+#!python
+
+import sys
+
+from setup import main as setup
+from reserve import main as reserve
+
+available_scripts = ['reserve', 'setup']
+
+
+def run(script, arg):
+    if script == 'setup':
+        setup()
+    elif script == 'reserve':
+        reserve()
+
+
+if __name__ == '__main__':
+    args = sys.argv
+
+    if len(args) < 2 or args[1] not in available_scripts:
+        print('[FAILED]请指定要运行的脚本命令')
+        print('可用命令：', end='')
+        for available_script in available_scripts:
+            print(available_script, end=', ')
+        print('')
+    else:
+        run(args[1], args[2:])
